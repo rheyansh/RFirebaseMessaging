@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="swE-Xc-w0p">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="45w-eM-Y9G">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="swE-Xc-w0p" customClass="TabBarController" customModule="MessagingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R7g-Kn-lpT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.22010323409999999" green="0.33661824460000001" blue="0.58381348850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.22010323409999999" green="0.33661824460000001" blue="0.58381348850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MBu-sQ-X8m" kind="relationship" relationship="viewControllers" id="2xz-EG-AIz"/>
+                        <segue destination="TDd-pX-s0l" kind="relationship" relationship="viewControllers" id="oZ8-K6-qjj"/>
+                        <segue destination="9QE-b4-OgK" kind="relationship" relationship="viewControllers" id="wW1-44-JBd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKL-hU-89H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="-206"/>
+        </scene>
+        <!--ConnectionSection-->
+        <scene sceneID="fX1-jn-FmE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ConnectionSection" id="MBu-sQ-X8m" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tabBarItemConnectionIcon" id="D6U-yl-6oF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TOf-N8-kxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="615" y="-464"/>
+        </scene>
+        <!--ProfileSection-->
+        <scene sceneID="G57-e8-kyc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfileSection" id="9QE-b4-OgK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tabBarItemProfileIcon" id="Pyr-tK-siF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ur-9C-B0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614" y="-130"/>
+        </scene>
+        <!--SearchSection-->
+        <scene sceneID="1aT-XZ-xzR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchSection" id="TDd-pX-s0l" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tabBarItemSearchIcon" id="qLG-QI-dcn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQE-Q2-114" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614" y="-309"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabBarItemConnectionIcon" width="26" height="26"/>
+        <image name="tabBarItemProfileIcon" width="26" height="26"/>
+        <image name="tabBarItemSearchIcon" width="26" height="26"/>
+    </resources>
+</document>

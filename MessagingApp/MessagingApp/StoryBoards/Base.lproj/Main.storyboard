@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Generic ContentVC-->
+        <scene sceneID="2vJ-As-sDl">
+            <objects>
+                <viewController storyboardIdentifier="GenericContentVC" id="M2t-4w-Ikm" customClass="GenericContentVC" customModule="MessagingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V8r-0p-yAQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="zC5-3T-hA8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QuS-TP-oaf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7LF-Mr-VW3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0m-DA-v6I">
+                                        <rect key="frame" x="60" y="20" width="255" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="MAB-cY-RHh"/>
+                                            <constraint firstAttribute="width" constant="255" id="wiB-uA-mbN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mT-6L-DZN">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="imageEdgeInsets" minX="5" minY="15" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="back_icon"/>
+                                        <state key="highlighted" image="back_icon"/>
+                                        <connections>
+                                            <action selector="onBack:" destination="M2t-4w-Ikm" eventType="touchUpInside" id="fQ9-x4-ypI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.22010323405265808" green="0.33661824464797974" blue="0.58381348848342896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="G0m-DA-v6I" firstAttribute="top" secondItem="7LF-Mr-VW3" secondAttribute="top" constant="20" id="2vh-MS-lLC"/>
+                                    <constraint firstItem="G0m-DA-v6I" firstAttribute="centerX" secondItem="7LF-Mr-VW3" secondAttribute="centerX" id="FGn-LV-pQG"/>
+                                    <constraint firstAttribute="height" constant="64" id="Sdv-oC-58H"/>
+                                </constraints>
+                            </view>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DRF-vX-oZm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="M2t-4w-Ikm" id="UFW-Hz-crq"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="s1l-7I-DBS">
+                                <rect key="frame" x="177.5" y="79" width="20" height="20"/>
+                                <color key="color" red="0.22010323409999999" green="0.33661824460000001" blue="0.58381348850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s1l-7I-DBS" firstAttribute="top" secondItem="7LF-Mr-VW3" secondAttribute="bottom" constant="15" id="9gG-PZ-aOO"/>
+                            <constraint firstItem="7LF-Mr-VW3" firstAttribute="leading" secondItem="QuS-TP-oaf" secondAttribute="leading" id="JLD-ST-TMF"/>
+                            <constraint firstItem="zC5-3T-hA8" firstAttribute="top" secondItem="DRF-vX-oZm" secondAttribute="bottom" id="NdI-hg-stL"/>
+                            <constraint firstItem="DRF-vX-oZm" firstAttribute="top" secondItem="7LF-Mr-VW3" secondAttribute="bottom" id="RhM-yt-OCv"/>
+                            <constraint firstItem="DRF-vX-oZm" firstAttribute="leading" secondItem="QuS-TP-oaf" secondAttribute="leading" id="XLG-7K-zH0"/>
+                            <constraint firstAttribute="trailing" secondItem="DRF-vX-oZm" secondAttribute="trailing" id="Z32-dX-aV3"/>
+                            <constraint firstItem="s1l-7I-DBS" firstAttribute="centerX" secondItem="QuS-TP-oaf" secondAttribute="centerX" id="anx-HL-JNx"/>
+                            <constraint firstAttribute="trailing" secondItem="7LF-Mr-VW3" secondAttribute="trailing" id="r1Q-BT-bPc"/>
+                            <constraint firstItem="7LF-Mr-VW3" firstAttribute="top" secondItem="QuS-TP-oaf" secondAttribute="top" id="saS-3d-3Wu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0lg-S3-LIB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i8j-li-w87"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="s1l-7I-DBS" id="T5R-IK-Gom"/>
+                        <outlet property="navBarTitleLabel" destination="G0m-DA-v6I" id="bau-Nd-JEc"/>
+                        <outlet property="webView" destination="DRF-vX-oZm" id="Kj4-l4-LjA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ka1-sg-Gof" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_icon" width="30" height="30"/>
+    </resources>
+</document>

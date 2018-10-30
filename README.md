@@ -21,7 +21,7 @@ Project provides basic idea and approach for building small social media applica
 ![Alt text](https://github.com/rheyansh/RFirebaseMessaging/blob/master/MessagingApp/Screenshots/2.png)
 ![Alt text](https://github.com/rheyansh/RFirebaseMessaging/blob/master/MessagingApp/Screenshots/3.png)
 ![Alt text](https://github.com/rheyansh/RFirebaseMessaging/blob/master/MessagingApp/Screenshots/4.png)
-![Alt text](https://github.com/rheyansh/RFirebaseMessaging/blob/master/MessagingApp/Screenshots/0.png)
+![Alt text](https://github.com/rheyansh/RFirebaseMessaging/blob/master/MessagingApp/Screenshots/5.png)
 
 # More for Firebase
 https://console.firebase.google.com/

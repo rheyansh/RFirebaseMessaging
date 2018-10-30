@@ -16,12 +16,12 @@ Project provides basic idea and approach for building small social media applica
 * Shared Media
 * Many Others..
 
-![Alt text](https://github.com/razzzsharma/MessagingApp/blob/dev/Screenshots/0.png)
-![Alt text](https://github.com/razzzsharma/MessagingApp/blob/dev/Screenshots/1.png)
-![Alt text](https://github.com/razzzsharma/MessagingApp/blob/dev/Screenshots/2.png)
-![Alt text](https://github.com/razzzsharma/MessagingApp/blob/dev/Screenshots/3.png)
-![Alt text](https://github.com/razzzsharma/MessagingApp/blob/dev/Screenshots/4.png)
-![Alt text](https://github.com/razzzsharma/MessagingApp/blob/dev/Screenshots/5.png)
+![Alt text](https://github.com/rheyansh/RFirebaseMessaging/blob/master/MessagingApp/Screenshots/0.png)
+![Alt text](https://github.com/rheyansh/RFirebaseMessaging/blob/master/MessagingApp/Screenshots/1.png)
+![Alt text](https://github.com/rheyansh/RFirebaseMessaging/blob/master/MessagingApp/Screenshots/2.png)
+![Alt text](https://github.com/rheyansh/RFirebaseMessaging/blob/master/MessagingApp/Screenshots/3.png)
+![Alt text](https://github.com/rheyansh/RFirebaseMessaging/blob/master/MessagingApp/Screenshots/4.png)
+![Alt text](https://github.com/rheyansh/RFirebaseMessaging/blob/master/MessagingApp/Screenshots/0.png)
 
 # More for Firebase
 https://console.firebase.google.com/

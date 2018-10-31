@@ -3,7 +3,7 @@ Project provides basic idea and approach for building small social media applica
 
 # IMPORTANT
 * Make sure to update GoogleService-Info.plist
-* fcmServerKey inside class **FCMNotificationHandler**
+* fcmServerKey inside class **FCMNotificationHandler** Phonebook
 
 # Project includes
 * Login, Signup, Forgot Password, Change Password, Logout

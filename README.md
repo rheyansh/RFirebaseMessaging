@@ -34,3 +34,11 @@ https://console.firebase.google.com/
 
 # License
 RFirebaseMessaging is available under the MIT license. See the LICENSE file for more info.
+
+
+## Other Libraries
+
+* [RBiometric](https://github.com/rheyansh/RBiometric):- Elegant and Easy-to-Use library for iOS Biometric (TouchId and FaceId) authentication.
+* [RPdfGenerator](https://github.com/rheyansh/RPdfGenerator):- A sample project to generate PDF file from data using itextpdf/itext7 library.
+* [RPicker](https://github.com/rheyansh/RPicker):- Elegant and Easy-to-Use Date and Options Picker.
+* [RBeacon](https://github.com/rheyansh/RBeacon):- Sample project for turning android device into a Beacon device. App can work as both broadcaster and receiver.
